@@ -1,0 +1,40 @@
+.not-found{
+    padding: 5rem 10rem;
+    .information{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        h1, h2, h3{
+            padding: 0.5rem 4rem;
+        }
+        h1{
+            text-align: center;
+            font-size: 8rem;
+        }
+        
+    }
+    .search{
+        text-align: center;
+        padding: 3rem 0rem;
+        button{
+            background: var(--main-color);
+            padding: .5rem 2rem;
+            cursor: pointer;
+            color: #fff;
+            font-size: 1.5rem;
+            border: none;
+            &:hover{
+                background: var(--main-color-hover);
+            }
+        }
+        input{
+            font-size: 1.5rem;
+            border: none;
+            width: 50%;
+            padding: .5rem;
+            margin-top: 1rem;
+            box-shadow: 0 0 30px rgba(0,0,0,.2);
+            font-weight: 700;
+        }
+    }
+}
