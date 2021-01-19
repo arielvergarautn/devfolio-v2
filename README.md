@@ -1,7 +1,7 @@
 # Capture
 
 ## Web site
-https://cap-ture.netlify.app/
+https://arielbvergara.netlify.app/
 
 ### Description
 Personal website.
@@ -12,9 +12,14 @@ react js
 scss
 html
 javascript
+framer-motion
 
 ### Making a Progressive Web App
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
 ### TODO
+Data.js
+Home
+Work
+Contact
 Mobile friendly
