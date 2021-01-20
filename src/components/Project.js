@@ -1,17 +1,34 @@
-import React from 'react'
+//Route
+import { useHistory } from 'react-router-dom'
+//Components
+import ProjectDetails from './ProjectDetails';
 
-const Project = ({ name, description, website, picture, screenshots, github }) => {
+const Project = ({ name, description, website, picture, screenshots, github, isSelected }) => {
+
+    const history = useHistory();
+
+    const onClickHandler = (e) => {
+        history.push(`/work/${name}`)
+    }
+
+
     return (
-        <div className='project'>
-            <h1>{name}</h1>
-            <p>{description}</p>
-            <a href={website}>Website</a>
-            <a href={github}>Github</a>
-            <img src={picture} alt="picture" />
-            {screenshots.map(screen => (
-                <img src={screen} alt="" />
-            ))}
-        </div>
+        <>
+            <div className='project' onClick={onClickHandler}>
+                <h1>{name}</h1>
+                <img src={picture} alt="foto" />
+            </div>
+            {
+                isSelected &&
+                <ProjectDetails
+                    name={name}
+                    description={description}
+                    website={website}
+                    picture={picture}
+                    github={github}
+                    screenshots={screenshots} />
+            }
+        </>
     )
 }
 

@@ -12,6 +12,7 @@ import gamerS2 from './public/img/gamer-s2.png'
 export const workData = () => {
     return [
         {
+            id: 1,
             name: 'Capture',
             description: 'Portfolio / Personal website',
             website: 'https://cap-ture.netlify.app/',
@@ -22,6 +23,7 @@ export const workData = () => {
             github: 'https://github.com/arielvergarautn/capture',
         },
         {
+            id: 2,
             name: 'Game news',
             description: 'Gamer`s news website',
             website: 'https://gamernews.netlify.app/',

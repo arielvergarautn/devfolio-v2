@@ -7,23 +7,22 @@ import Nav from "./components/Nav";
 //Styles
 import './public/styles/app.scss';
 //Route
-import { Route, Switch } from 'react-router-dom'
-//Animations
-import { AnimatePresence } from 'framer-motion'
+import { Route, Switch, useLocation } from 'react-router-dom'
 
 
 function App() {
+
+  const location = useLocation();
+
   return (
     <div className="App">
-      <AnimatePresence exitBeforeEnter>
-        <Nav />
-        <Switch>
-          <Route exact path={['/', '/home']} component={Home} />
-          <Route exact path='/work' component={Work} />
-          <Route exact path='/contact' component={Contact} />
-          <Route path='*' component={NotFound} />
-        </Switch>
-      </AnimatePresence>
+      <Nav />
+      <Switch location={location} key={location.pathname}>
+        <Route exact path={['/', '/home']} component={Home} />
+        <Route exact path={['/work', '/work/:id']} component={Work} />
+        <Route exact path='/contact' component={Contact} />
+        <Route path='*' component={NotFound} />
+      </Switch>
     </div>
   );
 }
