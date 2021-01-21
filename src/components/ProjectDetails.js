@@ -35,25 +35,25 @@ const ProjectDetails = ({ name, description, website, picture, screenshots, gith
         return <ImageGallery showPlayButton={false} items={picturesFormatted} />
     }
 
-
     return (
         <>
-            <CardShadow back={backHandler} />
-            <div className='details'>
-                <h1>{name}</h1>
-                <div className="information">
-                    <div className="description">
-                        <p>{description}</p>
+            <CardShadow back={backHandler}>
+                <div className='details' onClick={(e) => e.stopPropagation()}>
+                    <h1>{name}</h1>
+                    <div className="information">
+                        <div className="description">
+                            <p>{description}</p>
+                        </div>
+                        <div className="links">
+                            <a href={website} target='_blank' rel="noreferrer"><img src={websiteIcon} alt="" />Go to the site</a>
+                            <a href={github} target='_blank' rel="noreferrer"><img src={githubIcon} alt="" />See the code</a>
+                        </div>
                     </div>
-                    <div className="links">
-                        <a href={website} target='_blank' rel="noreferrer"><img src={websiteIcon} alt="" />Go to the site</a>
-                        <a href={github} target='_blank' rel="noreferrer"><img src={githubIcon} alt="" />See the code</a>
-                    </div>
+                    {
+                        getGallery()
+                    }
                 </div>
-                {
-                    getGallery()
-                }
-            </div>
+            </CardShadow>
         </>
     )
 }

@@ -1,0 +1,20 @@
+.card-shadow{
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: scroll;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    &::-webkit-scrollbar{
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: var(--main-color);
+    }
+    &::-webkit-scrollbar-track{
+        background: white;
+    }
+    
+}

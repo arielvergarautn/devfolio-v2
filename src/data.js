@@ -14,6 +14,17 @@ import music from './public/img/music.png'
 import musicS1 from './public/img/music-s1.png'
 import musicS2 from './public/img/music-s2.png'
 
+//Recipe
+import recipe from './public/img/recipe.png'
+import recipeS1 from './public/img/recipe-s1.png'
+import recipeS2 from './public/img/recipe-s2.png'
+import recipeS3 from './public/img/recipe-s3.png'
+
+//Plumber
+import plumber from './public/img/plumber.png'
+import plumberS1 from './public/img/plumber-s1.png'
+import plumberS2 from './public/img/plumber-s2.png'
+
 export const workData = () => {
     return [
         {
@@ -48,6 +59,28 @@ export const workData = () => {
                 gamer, gamerS1, gamerS2
             ],
             github: 'https://github.com/arielvergarautn/music-app',
+        },
+        {
+            id: 4,
+            name: 'Recipe',
+            description: 'Recipes app',
+            website: 'https://recipies-91cf8.web.app/',
+            picture: recipe,
+            screenshots: [
+                recipe, recipeS1, recipeS2, recipeS3
+            ],
+            github: 'https://github.com/ariel95/recipies',
+        },
+        {
+            id: 5,
+            name: 'Plomería Baustista Angel',
+            description: 'Recipes app',
+            website: 'https://plomeriaba.web.app/',
+            picture: plumber,
+            screenshots: [
+                plumber, plumberS1, plumberS2
+            ],
+            github: 'https://github.com/ariel95/pba',
         },
 
     ]
