@@ -1,12 +1,18 @@
 import React from 'react'
+
+//Components
+import Banner from '../components/Banner'
+import AboutUs from '../components/AboutUs'
+
 //Animations
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
+
 const Home = () => {
     return (
         <motion.div className='home' variants={pageAnimation} initial='hidden' animate='show'>
-            <h3>Ariel Bernardo Vergara</h3>
-            <p>Full <span>stack </span>developer</p>
+            <Banner />
+            <AboutUs />
         </motion.div>
     )
 }

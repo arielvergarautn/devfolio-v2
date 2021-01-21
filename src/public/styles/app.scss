@@ -1,6 +1,8 @@
 :root{
     --main-color:#23d997;
     --main-color-hover:#1fc588;
+    --background-color: #1b1b1b;
+    --secondary-background-color: #f3f3f3;
 }
 
 *{
@@ -10,7 +12,7 @@
 }
 
 body{
-    background: #1b1b1b;
+    background: var(--background-color);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
@@ -139,3 +141,4 @@ p{
 @import 'notFound';
 @import 'work';
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import 'home'

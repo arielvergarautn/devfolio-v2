@@ -1,0 +1,40 @@
+.home{
+    .banner{
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5rem 10rem;
+        color: #fff;
+        justify-content: center;
+        .title{
+            z-index: 2;
+        }
+        .button-section{
+            text-align: right;
+            margin-top: 3rem;
+            button{
+
+                &:hover{
+                    background-color: var(--main-color);
+                    color: white;
+                }
+            }
+        }
+        
+        svg#wave{
+            position: absolute;
+            left: 0;
+            z-index: 1;
+        }
+    }
+
+    .about{
+        background: var(--secondary-background-color);
+        color: black;
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

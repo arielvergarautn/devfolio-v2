@@ -11,7 +11,6 @@ const Project = ({ name, description, website, picture, screenshots, github, isS
         history.push(`/work/${name}`)
     }
 
-
     return (
         <>
             <div className='project' onClick={onClickHandler}>

@@ -72,3 +72,16 @@ export const lineNavAnim = {
         }
     }
 }
+export const waveAnim = {
+    hidden: {
+        pathLength: 0,
+        pathOffset: 1,
+    },
+    show: {
+        pathLength: 1,
+        pathOffset: 0,
+        transition: {
+            duration: 1
+        }
+    }
+}
