@@ -1,3 +1,9 @@
+.work{
+    background:#e4e4e4;
+    height: 100vh;
+    padding: 5rem;
+}
+
 .details{
     color: #444;
     width: 80%;
@@ -38,6 +44,9 @@
             position: relative;
             margin: 0 0.5rem;
         }
+    }
+    .image-gallery{
+        border: 1px solid #dcdcdc;
     }
 }
 .projects-list{

@@ -29,7 +29,6 @@ const Work = () => {
 
             <div className="projects-list">
                 <div className="projects">
-                    <h3>Work</h3>
                     {
                         WorkData.map(work => (
                             <Project

@@ -9,6 +9,11 @@ import gamer from './public/img/gamer.png'
 import gamerS1 from './public/img/gamer-s1.png'
 import gamerS2 from './public/img/gamer-s2.png'
 
+//Music app
+import music from './public/img/music.png'
+import musicS1 from './public/img/music-s1.png'
+import musicS2 from './public/img/music-s2.png'
+
 export const workData = () => {
     return [
         {
@@ -27,11 +32,23 @@ export const workData = () => {
             name: 'Game news',
             description: 'Gamer`s news website',
             website: 'https://gamernews.netlify.app/',
+            picture: music,
+            screenshots: [
+                music, musicS1, musicS2
+            ],
+            github: 'https://github.com/arielvergarautn/gamer-news',
+        },
+        {
+            id: 3,
+            name: 'Music app',
+            description: 'Music app',
+            website: 'https://m-app.netlify.app/',
             picture: gamer,
             screenshots: [
                 gamer, gamerS1, gamerS2
             ],
-            github: 'https://github.com/arielvergarautn/gamer-news',
-        }
+            github: 'https://github.com/arielvergarautn/music-app',
+        },
+
     ]
 }
