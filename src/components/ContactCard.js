@@ -1,6 +1,4 @@
 import React from 'react'
-//Route
-import { Link } from 'react-router-dom'
 //Animations
 import { fade } from '../animation'
 import { motion } from 'framer-motion'
