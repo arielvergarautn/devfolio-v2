@@ -25,6 +25,13 @@ import plumber from './public/img/plumber.png'
 import plumberS1 from './public/img/plumber-s1.png'
 import plumberS2 from './public/img/plumber-s2.png'
 
+//Icons Contact
+import Github from './public/icons/github.png'
+import Gmail from './public/icons/gmail.png'
+import Linkedin from './public/icons/linkedin.png'
+import Wsp from './public/icons/whatsapp.png'
+
+
 export const workData = () => {
     return [
         {
@@ -84,4 +91,31 @@ export const workData = () => {
         },
 
     ]
+}
+
+
+export const socialNetworkData = () => {
+    return [
+        {
+            name: 'Linkedin',
+            image: Linkedin,
+            url: 'https://www.linkedin.com/in/abvergara/'
+        },
+        {
+            name: 'Gmail',
+            image: Gmail,
+            url: 'mailto: abc@example.com'
+        },
+        {
+            name: 'Github',
+            image: Github,
+            url: 'https://github.com/arielvergarautn'
+        },
+        {
+            name: 'WhatsApp',
+            image: Wsp,
+            url: 'https://api.whatsapp.com/send?phone=31658974168&text=Hi!'
+        },
+
+    ];
 }
