@@ -59,6 +59,8 @@
     }
 }
 
+
+
 @media (max-width: 500px){
     .home{
         .banner{
@@ -71,6 +73,20 @@
                 img{
                     height: 60%;
                     width: 60%;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1024px){
+    .home{
+        .about{
+            .presentation{
+                img{
+                    height: 30rem;
+                    width: 30rem;
                 }
             }
         }

@@ -122,3 +122,22 @@
         }
     }
 }
+
+@media (max-width: 768px){
+    .work{
+        padding: 0rem;
+        .projects-list{
+            padding: 2rem;
+            .projects{
+                grid-column-gap: 3rem;
+                grid-row-gap: 2rem;
+                .project{
+                    min-height: auto;
+                    img{
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

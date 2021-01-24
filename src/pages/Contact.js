@@ -29,7 +29,7 @@ const Contact = () => {
                 <div className="cards">
                     {
                         data.map(social => (
-                            <ContactCard title={social.name} image={social.image} url={social.url} />
+                            <ContactCard key={social.name} title={social.name} image={social.image} url={social.url} />
                         ))
                     }
                 </div>
