@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { fade } from '../animation'
 //Components
-import Search from '../components/Search'
+// import Search from '../components/Search'
 import { useHistory } from 'react-router-dom'
 
 const NotFound = () => {
