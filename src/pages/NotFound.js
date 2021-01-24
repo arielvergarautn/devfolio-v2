@@ -4,8 +4,11 @@ import { motion } from 'framer-motion'
 import { fade } from '../animation'
 //Components
 import Search from '../components/Search'
+import { useHistory } from 'react-router-dom'
 
 const NotFound = () => {
+    const history = useHistory();
+
     return (
         <motion.div className='not-found' variants={fade} initial='hidden' animate='show'>
             <div className="information">
@@ -16,7 +19,11 @@ const NotFound = () => {
                     <h3>The page you're looking for was not found</h3>
                 </div>
             </div>
-            <Search />
+            <div className="actions">
+                <button onClick={() => history.goBack()}>Go back</button>
+            </div>
+
+            {/* <Search /> */}
         </motion.div>
     )
 }

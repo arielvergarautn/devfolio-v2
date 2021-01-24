@@ -9,6 +9,7 @@ import Project from '../components/Project'
 
 //Route
 import { useLocation } from 'react-router-dom'
+import PageTransitionAnimation from '../components/PageTransitionAnimation'
 
 const Work = () => {
 
@@ -26,7 +27,7 @@ const Work = () => {
 
     return (
         <motion.div className='work' variants={pageAnimation} initial='hidden' animate='show'>
-
+            <PageTransitionAnimation />
             <div className="projects-list">
                 <div className="projects">
                     {
