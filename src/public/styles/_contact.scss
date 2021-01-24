@@ -52,3 +52,19 @@
         }
     }
 }
+
+@media (max-width: 500px){
+    .contact{
+        .contact-banner{
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-networks{
+            padding: 2rem 0rem;
+            .cards{
+                grid-row-gap: 2rem;
+            }
+        }
+    }
+    
+}

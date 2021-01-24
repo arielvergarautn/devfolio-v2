@@ -15,11 +15,11 @@ const Contact = () => {
             <div className="contact-banner">
                 <div className="title">
                     <div className="hide">
-                        <motion.h2 variants={titleAnim}>We’d love to hear from you</motion.h2>
+                        <motion.h2 variants={titleAnim}>I’d love to hear from you</motion.h2>
                     </div>
                     <div className="hide">
                         <motion.h4 variants={titleAnim}>
-                            Whether you have a question, we are at your disposal!
+                            <span>Whether you have a question, I’m at your disposal!</span>
                         </motion.h4>
                     </div>
                 </div>

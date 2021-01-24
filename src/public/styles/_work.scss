@@ -86,3 +86,39 @@
         padding: 5rem 0rem;
     }
 }
+
+
+@media (max-width: 500px){
+    .work{
+        padding: 0;
+        .projects-list{
+            padding: 0;
+            .projects{
+                padding-top: 5rem;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                .project{
+                    border-radius: 0;
+                    img{
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .details{
+            width: 98%;
+            left: 1%;
+            padding: 5rem 1rem;
+            .information{
+                display: block;
+                text-align: center;
+            }
+            .links{
+                padding-top: 1rem;
+                padding-bottom: 3rem;
+            }
+            p{
+                padding: 1rem;
+            }
+        }
+    }
+}

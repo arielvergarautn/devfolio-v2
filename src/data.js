@@ -30,7 +30,7 @@ import Github from './public/icons/github.png'
 import Gmail from './public/icons/gmail.png'
 import Linkedin from './public/icons/linkedin.png'
 import Wsp from './public/icons/whatsapp.png'
-
+import Cv from './public/icons/cv.png'
 
 export const workData = () => {
     return [
@@ -116,6 +116,11 @@ export const socialNetworkData = () => {
             image: Wsp,
             url: 'https://api.whatsapp.com/send?phone=31658974168&text=Hi!'
         },
+        {
+            name: 'Curriculum Vitae',
+            image: Cv,
+            url: '/files/ArielBernardoVergara.pdf'
+        }
 
     ];
 }

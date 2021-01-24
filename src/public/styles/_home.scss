@@ -32,9 +32,48 @@
     .about{
         background: var(--secondary-background-color);
         color: black;
-        min-height: 90vh;
+        // min-height: 90vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        .presentation{
+            display: flex;
+            text-align: center;
+            height: -moz-fit-content;
+            z-index: 10;
+            padding: 5rem;
+            .text{
+                padding: 5rem;
+                h1{
+                    color: var(--background-color);
+                }
+                p{
+                    color: var(--background-color);
+                }
+            }
+            img{
+                border-radius: 50%;
+                height: fit-content;
+            }
+        }
     }
+}
+
+@media (max-width: 500px){
+    .home{
+        .banner{
+            padding: 2rem;
+        }
+        .about{
+            .presentation{
+                padding: 5rem 0rem;
+                display: block;
+                img{
+                    height: 60%;
+                    width: 60%;
+                }
+            }
+        }
+    }
+
 }
