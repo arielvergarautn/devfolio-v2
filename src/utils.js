@@ -1,5 +1,4 @@
 export const sendMessageToSlack = (message) => {
-
     try {
         const requestOptions = {
             method: 'POST',
@@ -7,6 +6,7 @@ export const sendMessageToSlack = (message) => {
             mode: 'no-cors'
         };
         const url = process.env.REACT_APP_SLACK_URL.substring(0, process.env.REACT_APP_SLACK_URL.length - 1);
+        console.log(url)
         fetch(url, requestOptions);
     } catch (e) {
         console.log(e)
