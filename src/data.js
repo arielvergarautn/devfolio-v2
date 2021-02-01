@@ -37,7 +37,7 @@ export const workData = () => {
         {
             id: 1,
             name: 'Capture',
-            description: 'Portfolio / Personal website',
+            description: 'Portfolio / Personal website template',
             website: 'https://cap-ture.netlify.app/',
             picture: capture,
             screenshots: [
@@ -48,7 +48,7 @@ export const workData = () => {
         {
             id: 2,
             name: 'Game news',
-            description: 'Gamer`s news website',
+            description: 'Gamer`s news website. Find everything about games!',
             website: 'https://gamernews.netlify.app/',
             picture: music,
             screenshots: [
@@ -59,7 +59,7 @@ export const workData = () => {
         {
             id: 3,
             name: 'Music app',
-            description: 'Music app',
+            description: 'Listen some relaxing songs!',
             website: 'https://m-app.netlify.app/',
             picture: gamer,
             screenshots: [
@@ -70,7 +70,7 @@ export const workData = () => {
         {
             id: 4,
             name: 'Recipe',
-            description: 'Recipes app',
+            description: 'Find the best recipes here!',
             website: 'https://recipies-91cf8.web.app/',
             picture: recipe,
             screenshots: [
@@ -81,7 +81,7 @@ export const workData = () => {
         {
             id: 5,
             name: 'Plomería Baustista Angel',
-            description: 'Recipes app',
+            description: 'Company`s web site. Plumber services for you.',
             website: 'https://plomeriaba.web.app/',
             picture: plumber,
             screenshots: [

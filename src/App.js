@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 //Components and pages
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -8,11 +9,16 @@ import Nav from "./components/Nav";
 import './public/styles/app.scss';
 //Route
 import { Route, Switch, useLocation } from 'react-router-dom'
+import { sendMessageToSlack } from "./utils";
 
 
 function App() {
 
   const location = useLocation();
+
+  useEffect(() => {
+    sendMessageToSlack(`Navigating in: ${location.pathname}`);
+  }, [location.pathname])
 
   return (
     <div className="App">
