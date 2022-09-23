@@ -30,10 +30,12 @@ nav{
     .line{
         height: 0.3rem;
         background: #23d997;
-        width: 100%;
-        position: absolute;
-        bottom: -80%;
-        left: 55%;
+        margin: 7px auto;
+    }
+
+    .link-container{
+        height: 16px;
+        text-align: center;
     }
 }
 

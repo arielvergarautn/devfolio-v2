@@ -66,7 +66,7 @@ export const lineNavAnim = {
         width: '0%'
     },
     show: {
-        width: '50%',
+        width: '100%',
         transition: {
             duration: 0.75
         }
