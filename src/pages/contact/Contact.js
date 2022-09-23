@@ -1,11 +1,13 @@
 import React from 'react'
 //Animations
 import { motion } from 'framer-motion'
-import { pageAnimation, titleAnim } from '../animation'
-import WaveContact from '../components/WaveContact'
+import { pageAnimation, titleAnim } from '../../animation'
+import WaveContact from '../../components/WaveContact'
 //Data
-import { socialNetworkData } from '../data'
-import ContactCard from '../components/ContactCard'
+import { socialNetworkData } from '../../data'
+import ContactCard from '../../components/ContactCard'
+//CSS
+import './_contact.scss'
 
 const Contact = () => {
     const data = socialNetworkData();

@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 //Components
-import Banner from '../components/Banner'
-import AboutUs from '../components/AboutUs'
+import Banner from '../../components/Banner'
+import AboutUs from '../../components/AboutUs'
 
 //Animations
 import { motion } from 'framer-motion'
-import { pageAnimation } from '../animation'
+import { pageAnimation } from '../../animation'
+
+//Styles
+import './_home.scss'
 
 const Home = () => {
     return (

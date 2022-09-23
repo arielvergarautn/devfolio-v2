@@ -1,9 +1,11 @@
 import React from 'react'
 //Animations
 import { motion } from 'framer-motion'
-import { fade } from '../animation'
+import { fade } from '../../animation'
 //Components
 import { useNavigate } from 'react-router-dom'
+//CSS
+import './_notFound.scss'
 
 const NotFound = () => {
 

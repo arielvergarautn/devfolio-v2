@@ -1,9 +1,8 @@
-import { useEffect } from "react";
 //Components and pages
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import Work from "./pages/Work";
-import NotFound from "./pages/NotFound";
+import Home from "./pages/home/Home";
+import Contact from "./pages/contact/Contact";
+import Work from "./pages/work/Work";
+import NotFound from "./pages/notFound/NotFound";
 import Nav from "./components/Nav";
 //Styles
 import './public/styles/app.scss';

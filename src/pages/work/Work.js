@@ -1,13 +1,15 @@
 import React from 'react'
 //Animations
 import { motion } from 'framer-motion'
-import { pageAnimation } from '../animation'
+import { pageAnimation } from '../../animation'
 //Data
-import { workData } from '../data'
-import Project from '../components/Project'
+import { workData } from '../../data'
+import Project from '../../components/Project'
 //Route
 import { useLocation } from 'react-router-dom'
-import PageTransitionAnimation from '../components/PageTransitionAnimation'
+import PageTransitionAnimation from '../../components/PageTransitionAnimation'
+//CSS
+import './_work.scss'
 
 const Work = () => {
     const WorkData = workData();
