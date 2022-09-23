@@ -32,7 +32,6 @@ export const titleAnim = {
             ease: 'easeOut'
         }
     }
-
 }
 
 export const fade = {
@@ -61,6 +60,7 @@ export const photoAnim = {
         }
     }
 }
+
 export const lineNavAnim = {
     hidden: {
         width: '0%'
@@ -72,6 +72,7 @@ export const lineNavAnim = {
         }
     }
 }
+
 export const waveAnim = {
     hidden: {
         pathLength: 0,

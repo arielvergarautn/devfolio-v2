@@ -11,7 +11,6 @@ const ContactCard = ({ title, image, url }) => {
         sendMessageToSlack(`Clicking on: ${title}`);
     }
 
-
     return (
         <motion.a onClick={onClickHandler} variants={fade} className="card" href={url} target="_blank" rel="noopener noreferrer" download>
             <img src={image} alt="" />

@@ -1,6 +1,6 @@
 import React from 'react'
 //Router
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 //Components
 import CardShadow from './CardShadow';
@@ -15,7 +15,7 @@ import { sendMessageToSlack } from '../utils';
 
 const ProjectDetails = ({ name, description, website, picture, screenshots, github, isSelected }) => {
 
-    const history = useHistory();
+    const history = useNavigate();
 
     //Handlers
     const backHandler = () => {
@@ -37,25 +37,23 @@ const ProjectDetails = ({ name, description, website, picture, screenshots, gith
     }
 
     return (
-        <>
-            <CardShadow back={backHandler}>
-                <div className='details' onClick={(e) => e.stopPropagation()}>
-                    <h1>{name}</h1>
-                    <div className="information">
-                        <div className="description">
-                            <p>{description}</p>
-                        </div>
-                        <div className="links">
-                            <a onClick={() => sendMessageToSlack(`Going to: ${website}`)} href={website} target='_blank' rel="noreferrer"><img src={websiteIcon} alt="" />Go to the site</a>
-                            <a onClick={() => sendMessageToSlack(`Going to: ${github}`)} href={github} target='_blank' rel="noreferrer"><img src={githubIcon} alt="" />See the code</a>
-                        </div>
+        <CardShadow back={backHandler}>
+            <div className='details' onClick={(e) => e.stopPropagation()}>
+                <h1>{name}</h1>
+                <div className="information">
+                    <div className="description">
+                        <p>{description}</p>
                     </div>
-                    {
-                        getGallery()
-                    }
+                    <div className="links">
+                        <a onClick={() => sendMessageToSlack(`Going to: ${website}`)} href={website} target='_blank' rel="noreferrer"><img src={websiteIcon} alt="" />Go to the site</a>
+                        <a onClick={() => sendMessageToSlack(`Going to: ${github}`)} href={github} target='_blank' rel="noreferrer"><img src={githubIcon} alt="" />See the code</a>
+                    </div>
                 </div>
-            </CardShadow>
-        </>
+                {
+                    getGallery()
+                }
+            </div>
+        </CardShadow>
     )
 }
 

@@ -50,9 +50,9 @@ export const workData = () => {
             name: 'Game news',
             description: 'Gamer`s news website. Find everything about games!',
             website: 'https://gamernews.netlify.app/',
-            picture: music,
+            picture: gamer,
             screenshots: [
-                music, musicS1, musicS2
+                gamer, gamerS1, gamerS2
             ],
             github: 'https://github.com/arielvergarautn/gamer-news',
         },
@@ -61,9 +61,9 @@ export const workData = () => {
             name: 'Music app',
             description: 'Listen some relaxing songs!',
             website: 'https://m-app.netlify.app/',
-            picture: gamer,
+            picture: music,
             screenshots: [
-                gamer, gamerS1, gamerS2
+                music, musicS1, musicS2
             ],
             github: 'https://github.com/arielvergarautn/music-app',
         },
@@ -89,38 +89,40 @@ export const workData = () => {
             ],
             github: 'https://github.com/ariel95/pba',
         },
-
     ]
 }
-
 
 export const socialNetworkData = () => {
     return [
         {
             name: 'Linkedin',
             image: Linkedin,
-            url: 'https://www.linkedin.com/in/abvergara/'
+            url: 'https://www.linkedin.com/in/abvergara/',
+            updated: true
         },
         {
             name: 'Gmail',
             image: Gmail,
-            url: 'mailto: abc@example.com'
+            url: 'mailto: arielbvergara@gmail.com',
+            updated: true
         },
         {
             name: 'Github',
             image: Github,
-            url: 'https://github.com/arielvergarautn'
+            url: 'https://github.com/arielvergarautn',
+            updated: true
         },
         {
             name: 'WhatsApp',
             image: Wsp,
-            url: 'https://api.whatsapp.com/send?phone=31658974168&text=Hi!'
+            url: 'https://api.whatsapp.com/send?phone=31658974168&text=Hi!',
+            updated: true
         },
         {
             name: 'Curriculum Vitae',
             image: Cv,
-            url: '/files/ArielBernardoVergara.pdf'
+            url: '/files/ArielBernardoVergara.pdf',
+            updated: false
         }
-
     ];
 }

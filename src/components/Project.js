@@ -1,14 +1,14 @@
 //Route
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 //Components
 import ProjectDetails from './ProjectDetails';
 
 const Project = ({ name, description, website, picture, screenshots, github, isSelected }) => {
 
-    const history = useHistory();
-
+    let navigate = useNavigate();
+    
     const onClickHandler = (e) => {
-        history.push(`/work/${name}`)
+        navigate(`/work/${name}`)
     }
 
     return (

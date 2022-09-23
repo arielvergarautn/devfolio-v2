@@ -4,7 +4,7 @@ import ProfilePicture from '../public/img/profile.png'
 
 const AboutUs = () => {
     return (
-        <div className='about'>
+        <div id='about-me' className='about'>
             <div className='presentation'>
                 <img src={ProfilePicture} alt="" />
                 <div className="text">

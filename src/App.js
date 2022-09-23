@@ -7,28 +7,20 @@ import NotFound from "./pages/NotFound";
 import Nav from "./components/Nav";
 //Styles
 import './public/styles/app.scss';
-//Route
-import { Route, Switch, useLocation } from 'react-router-dom'
-import { sendMessageToSlack } from "./utils";
-
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
-
-  const location = useLocation();
-
-  useEffect(() => {
-    sendMessageToSlack(`Navigating in: ${location.pathname}`);
-  }, [location.pathname])
-
   return (
     <div className="App">
       <Nav />
-      <Switch location={location} key={location.pathname}>
-        <Route exact path={['/', '/home']} component={Home} />
-        <Route exact path={['/work', '/work/:id']} component={Work} />
-        <Route exact path='/contact' component={Contact} />
-        <Route path='*' component={NotFound} />
-      </Switch>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/home' element={<Home />} />
+        <Route exact path='/work' element={<Work />} />
+        <Route exact path='/work/:id' element={<Work />} />
+        <Route exact path='/contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </div>
   );
 }

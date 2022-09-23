@@ -2,17 +2,14 @@ import React from 'react'
 //Animations
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
-
 //Data
 import { workData } from '../data'
 import Project from '../components/Project'
-
 //Route
 import { useLocation } from 'react-router-dom'
 import PageTransitionAnimation from '../components/PageTransitionAnimation'
 
 const Work = () => {
-
     const WorkData = workData();
     const location = useLocation();
 
@@ -23,7 +20,6 @@ const Work = () => {
     const isSelected = (id) => {
         return selectedWorkId === id;
     }
-
 
     return (
         <motion.div className='work' variants={pageAnimation} initial='hidden' animate='show'>
@@ -46,7 +42,6 @@ const Work = () => {
                     }
                 </div>
             </div>
-
         </motion.div>
     )
 }

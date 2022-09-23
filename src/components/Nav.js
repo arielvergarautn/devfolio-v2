@@ -3,14 +3,14 @@ import React from 'react'
 //Router
 import {
     Link,
-    useLocation
+    useNavigate
 } from 'react-router-dom'
 //Animations
 import { motion } from 'framer-motion'
 import { lineNavAnim } from '../animation'
 const Nav = () => {
 
-    const { pathname } = useLocation();
+    const { pathname } = useNavigate();
     return (
         <nav className='nav'>
             <h1>
@@ -24,7 +24,6 @@ const Nav = () => {
                             <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>
                         )
                     }
-
                 </li>
                 <li>
                     <Link to="/work">Our work</Link>
