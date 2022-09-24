@@ -1,8 +1,8 @@
 import React from 'react'
 
 //Components
-import Banner from '../../components/Banner'
-import AboutMe from '../../components/AboutMe'
+import Banner from '../../components/single/Banner'
+import AboutMe from '../../components/single/AboutMe'
 
 //Animations
 import { motion } from 'framer-motion'

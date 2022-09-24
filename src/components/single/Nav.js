@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 //Animations
 import { motion } from 'framer-motion'
-import { lineNavAnim } from '../animation'
+import { lineNavAnim } from '../../animation'
 
 const Nav = () => {
 

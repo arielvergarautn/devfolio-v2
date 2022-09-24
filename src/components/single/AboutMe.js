@@ -1,6 +1,6 @@
 import React from 'react'
 //Profile picture
-import ProfilePicture from '../public/img/profile.png'
+import ProfilePicture from '../../public/img/profile.png'
 
 const AboutMe = () => {
     return (
