@@ -11,9 +11,9 @@ function SidebarMobile({sidebarActive, setSidebarActive}) {
     <div class={sidebarActive ? "sidebar-mobile active" : "sidebar-mobile"}>
       <div className='header'>
         <h1>
-            <Link className='logo' to="/">Devfolio</Link>
+            <Link className='logo' to="/" onClick={handleClick}>Devfolio</Link>
         </h1>
-        <i class="bi bi-x-lg" onClick={handleClick}></i>
+        <i class="bi bi-x-lg me-0" onClick={handleClick}></i>
       </div>
       <ul>
         <li>
