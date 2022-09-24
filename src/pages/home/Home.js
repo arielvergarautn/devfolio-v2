@@ -1,13 +1,9 @@
-import React from 'react'
-
 //Components
 import Banner from '../../components/single/Banner'
-import AboutMe from '../../components/single/AboutMe'
-
+import AboutMe from '../../components/single/aboutMe/AboutMe'
 //Animations
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../../animation'
-
 //Styles
 import './_home.scss'
 

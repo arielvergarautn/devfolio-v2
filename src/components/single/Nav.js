@@ -40,7 +40,7 @@ const Nav = () => {
                 </li>
                 <li>
                     <div class="link-container">
-                        <Link to="/work">My work</Link>
+                        <Link to="/work">My projects</Link>
                         {
                             pathname === '/work' && (
                                 <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>

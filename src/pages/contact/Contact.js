@@ -1,32 +1,18 @@
-import React from 'react'
-//Animations
-import { motion } from 'framer-motion'
-import { pageAnimation, titleAnim } from '../../animation'
-import Wave from '../../components/Wave'
 //Data
 import { socialNetworkData } from '../../data'
 import ContactCard from '../../components/ContactCard'
 //CSS
 import './_contact.scss'
+import BannerGeneral from '../../components/BannerGeneral'
 
 const Contact = () => {
     const data = socialNetworkData();
+    const title = "I’d love to hear from you";
+    const subTitle = "Whether you have a question, I’m at your disposal!";
 
     return (
-        <motion.div className='contact' variants={pageAnimation} initial='hidden' animate='show'>
-            <div className="contact-banner">
-                <div className="title">
-                    <div className="hide">
-                        <motion.h2 variants={titleAnim}>I’d love to hear from you</motion.h2>
-                    </div>
-                    <div className="hide">
-                        <motion.h4 variants={titleAnim}>
-                            <span>Whether you have a question, I’m at your disposal!</span>
-                        </motion.h4>
-                    </div>
-                </div>
-                <Wave />
-            </div>
+        <>
+            <BannerGeneral title={title} subTitle={subTitle} />
             <div className="social-networks">
                 <div className="cards">
                     {
@@ -36,7 +22,7 @@ const Contact = () => {
                     }
                 </div>
             </div>
-        </motion.div>
+        </>
     )
 }
 
