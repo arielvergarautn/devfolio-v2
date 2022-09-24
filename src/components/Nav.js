@@ -1,5 +1,4 @@
 import React from 'react'
-
 //Router
 import {
     Link,
@@ -12,8 +11,6 @@ import { lineNavAnim } from '../animation'
 const Nav = () => {
 
     const { pathname } = useLocation();
-    
-    console.log(pathname)
 
     return (
         <nav className='nav'>
@@ -33,7 +30,7 @@ const Nav = () => {
                 </li>
                 <li>
                     <div class="link-container">
-                        <Link to="/work">Our work</Link>
+                        <Link to="/work">My work</Link>
                         {
                             pathname === '/work' && (
                                 <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>

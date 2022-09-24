@@ -21,11 +21,10 @@ const Banner = () => {
                 <div className="hide button-section">
                     <Link to='/contact'>
                         <motion.button variants={fade}>
-                            Contact us
+                            Contact me
                         </motion.button>
                     </Link>
                 </div>
-
             </div>
             <Wave />
         </div>

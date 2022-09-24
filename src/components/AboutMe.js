@@ -2,7 +2,7 @@ import React from 'react'
 //Profile picture
 import ProfilePicture from '../public/img/profile.png'
 
-const AboutUs = () => {
+const AboutMe = () => {
     return (
         <div id='about-me' className='about'>
             <div className='presentation'>
@@ -21,4 +21,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs
+export default AboutMe

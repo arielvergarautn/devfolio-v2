@@ -2,7 +2,7 @@ import React from 'react'
 
 //Components
 import Banner from '../../components/Banner'
-import AboutUs from '../../components/AboutUs'
+import AboutMe from '../../components/AboutMe'
 
 //Animations
 import { motion } from 'framer-motion'
@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <motion.div className='home' variants={pageAnimation} initial='hidden' animate='show'>
             <Banner />
-            <AboutUs />
+            <AboutMe />
         </motion.div>
     )
 }

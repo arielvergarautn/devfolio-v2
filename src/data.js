@@ -1,9 +1,3 @@
-//Capture
-import capture from './public/img/capture.png'
-import captureS1 from './public/img/capture-s1.png'
-import captureS2 from './public/img/capture-s2.png'
-import captureS3 from './public/img/capture-s3.png'
-
 //Gamer news
 import gamer from './public/img/gamer.png'
 import gamerS1 from './public/img/gamer-s1.png'
@@ -34,17 +28,6 @@ import Cv from './public/icons/cv.png'
 
 export const workData = () => {
     return [
-        {
-            id: 1,
-            name: 'Capture',
-            description: 'Portfolio / Personal website template',
-            website: 'https://cap-ture.netlify.app/',
-            picture: capture,
-            screenshots: [
-                capture, captureS1, captureS2, captureS3
-            ],
-            github: 'https://github.com/arielvergarautn/capture',
-        },
         {
             id: 2,
             name: 'Game news',
