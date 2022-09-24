@@ -2,7 +2,7 @@ import React from 'react'
 //Animations
 import { motion } from 'framer-motion'
 import { pageAnimation, titleAnim } from '../../animation'
-import WaveContact from '../../components/WaveContact'
+import Wave from '../../components/Wave'
 //Data
 import { socialNetworkData } from '../../data'
 import ContactCard from '../../components/ContactCard'
@@ -25,7 +25,7 @@ const Contact = () => {
                         </motion.h4>
                     </div>
                 </div>
-                <WaveContact />
+                <Wave />
             </div>
             <div className="social-networks">
                 <div className="cards">

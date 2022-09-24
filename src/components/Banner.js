@@ -2,7 +2,7 @@ import React from 'react'
 //Animations
 import { motion } from 'framer-motion'
 import { fade, titleAnim } from '../animation'
-import Wave from './Wave'
+import WaveHome from './WaveHome'
 //Route
 import { Link } from 'react-router-dom'
 
@@ -26,7 +26,7 @@ const Banner = () => {
                     </Link>
                 </div>
             </div>
-            <Wave />
+            <WaveHome />
         </div>
     )
 }
