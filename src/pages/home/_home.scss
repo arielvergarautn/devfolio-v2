@@ -32,7 +32,6 @@
     .about{
         background: var(--secondary-background-color);
         color: black;
-        // min-height: 90vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,6 +54,17 @@
                 border-radius: 50%;
                 height: fit-content;
             }
+        }
+    }
+}
+
+@media (max-width: 725px){
+    .presentation{
+        padding: 5rem 0rem;
+        display: block;
+        img{
+            height: 40% !important;
+            width: 40% !important;
         }
     }
 }
