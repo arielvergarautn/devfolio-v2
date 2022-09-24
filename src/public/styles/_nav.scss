@@ -39,8 +39,30 @@ nav{
     }
 }
 
-@media (max-width: 500px){
-    .nav{
+.menu{
+    display: none;
+    color: var(--secondary-background-color);
+    cursor: pointer;
+    svg{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media (max-width: 725px){
+    nav{
         padding: 1rem 3rem;
+
+        #logo{
+            font-size: large;
+        }
+
+        li{
+            display: none;
+        }
+    }
+
+    .menu{
+        display: block;
     }
 }
