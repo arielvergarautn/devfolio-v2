@@ -11,7 +11,7 @@ const AboutMe = () => {
 
     const nosisTitle = "Nosis"
     const nosisSubTitle = ""
-    const nosisUrl = "www.google.com"
+    const nosisUrl = "http://www.google.com"
     const nosisImage = Github
     const paragraphOne = "lkdajlksdjlkajlskjdlksajdldskajlkdsjlkja"
     

@@ -1,11 +1,7 @@
-import { useNavigate } from 'react-router-dom';
-
 function AboutMeGeneric({title, subtitle, link, image, paragraphOne, paragraphTwo}) {
 
-    const history = useNavigate();
-
     const handleClick = () => {
-        history.push(link);
+        window.location.href = link;
     }
 
     return (
