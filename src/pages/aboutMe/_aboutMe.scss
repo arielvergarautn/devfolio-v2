@@ -1,7 +1,26 @@
-// .my-experience{
-
-// }
-
-// .about-me{
-
-// }
+.about-me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // text-align: center;
+    z-index: 10;
+    padding: 5rem;
+    h3, h5{
+        color: #b534ac;
+    }
+    p{
+        color: #6c6c6c;
+    }
+    img{
+        height: 20rem !important;
+        border-radius: 50%;
+        height: fit-content;
+    }
+    &:nth-child(even) {
+        background: var(--background-color);
+        flex-direction: row-reverse;
+    }
+    &:nth-child(odd){
+        background: var(--secondary-background-color);
+    }
+}
