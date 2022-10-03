@@ -3,6 +3,7 @@
     --main-color-hover:#1fc588;
     --background-color: #1b1b1b;
     --secondary-background-color: #f3f3f3;
+    --border-secondary-color: #2c2c2c;
 }
 
 *{
@@ -173,6 +174,7 @@ p{
     }
 }
 
+@import 'section-container';
 @import 'banner';
 @import 'nav';
 @import "~react-image-gallery/styles/scss/image-gallery.scss";

@@ -1,0 +1,11 @@
+.section-container{
+    min-height: 50vh;
+    background: var(--secondary-background-color);
+    padding: 5rem 10rem;
+}
+
+@media (max-width: 500px){
+    .section-container{
+        padding: 2rem 1rem;
+    }
+}

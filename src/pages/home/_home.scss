@@ -58,6 +58,28 @@
     }
 }
 
+.sections{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+
+    a{
+        border: 1px solid var(--border-secondary-color);
+        height: 10vh;
+        align-items: center;
+        display: flex;
+        padding: auto;
+        width: 100%;
+        justify-content: center;
+        &:hover{
+            background-color: var(--main-color-hover);
+            cursor: pointer;
+            color: white;
+        }
+    }
+}
+
 @media (max-width: 725px){
     .presentation{
         padding: 5rem 0rem;
