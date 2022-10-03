@@ -2,6 +2,7 @@
 import {
   Link,
 } from 'react-router-dom'
+import { AboutMeUrl, ContactUrl, ExperienceUrl, HomeUrl, WorkUrl } from '../../Constants';
 
 function SidebarMobile({sidebarActive, setSidebarActive}) {
 
@@ -17,22 +18,27 @@ function SidebarMobile({sidebarActive, setSidebarActive}) {
       </div>
       <ul>
         <li>
-          <Link onClick={handleClick} to="/home">
+          <Link onClick={handleClick} to={HomeUrl}>
             <i className="bi bi-house-door-fill"></i>Home
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/about">
+          <Link onClick={handleClick} to={AboutMeUrl}>
             <i className="bi bi-person-lines-fill"></i>About me
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/work">
+          <Link onClick={handleClick} to={ExperienceUrl}>
+            <i className="bi bi-person-workspace"></i>My experience
+            </Link>
+        </li>
+        <li>
+          <Link onClick={handleClick} to={WorkUrl}>
             <i className="bi bi-code-slash"></i>My projects
             </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/contact">
+          <Link onClick={handleClick} to={ContactUrl}>
             <i className="bi bi-telephone-fill"></i>Contact
           </Link>
         </li>

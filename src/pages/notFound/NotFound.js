@@ -9,7 +9,7 @@ import './_notFound.scss'
 
 const NotFound = () => {
 
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     return (
         <motion.div className='not-found' variants={fade} initial='hidden' animate='show'>
@@ -22,7 +22,7 @@ const NotFound = () => {
                 </div>
             </div>
             <div className="actions">
-                <button onClick={() => history.goBack()}>Go back</button>
+                <button onClick={() => navigate(-1)}>Go back</button>
             </div>
         </motion.div>
     )

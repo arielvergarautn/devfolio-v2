@@ -101,3 +101,14 @@
         }
     }
 }
+
+@media (max-width: 800px){
+    .header{
+        li{
+            display: none;
+            &.menu{
+                display: block;
+            }
+        }
+    }
+}

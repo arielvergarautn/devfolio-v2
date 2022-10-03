@@ -5,6 +5,7 @@ import Work from "./pages/work/Work";
 import NotFound from "./pages/notFound/NotFound";
 import Nav from "./components/single/Nav";
 import AboutMe from "./pages/aboutMe/AboutMe";
+import Experience from "./pages/experience/Experience";
 
 //Styles
 import './public/styles/app.scss';
@@ -18,6 +19,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/home' element={<Home />} />
         <Route exact path='/about' element={<AboutMe />} />
+        <Route exact path='/experience' element={<Experience />} />
         <Route exact path='/work' element={<Work />} />
         <Route exact path='/work/:id' element={<Work />} />
         <Route exact path='/contact' element={<Contact />} />

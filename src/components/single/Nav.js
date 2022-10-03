@@ -8,6 +8,7 @@ import {
 import { motion } from 'framer-motion'
 import { lineNavAnim } from '../../animation'
 import SidebarMobile from './SidebarMobile'
+import { WorkUrl, ContactUrl, ExperienceUrl, AboutMeUrl, HomeUrl } from '../../Constants'
 
 const Nav = () => {
 
@@ -18,14 +19,14 @@ const Nav = () => {
         <>
             <nav className='header'>
                 <h1>
-                    <Link className='logo' to="/">Devfolio</Link>
+                    <Link className='logo' to={"/"}>Devfolio</Link>
                 </h1>
                 <ul>
                     <li>
                         <div className="link-container">
-                            <Link to="/home">Home</Link>
+                            <Link to={HomeUrl}>Home</Link>
                             {
-                                (pathname === '/' || pathname === '/home') && (
+                                (pathname === '/' || pathname === HomeUrl) && (
                                     <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>
                                 )
                             }
@@ -33,9 +34,9 @@ const Nav = () => {
                     </li>
                     <li>
                         <div className="link-container">
-                            <Link to="/about">About me</Link>
+                            <Link to={AboutMeUrl}>About me</Link>
                             {
-                                pathname === '/about' && (
+                                pathname === AboutMeUrl && (
                                     <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>
                                 )
                             }
@@ -43,9 +44,9 @@ const Nav = () => {
                     </li>
                     <li>
                         <div className="link-container">
-                            <Link to="/work">My projects</Link>
+                            <Link to={ExperienceUrl}>My experience</Link>
                             {
-                                pathname === '/work' && (
+                                pathname === ExperienceUrl && (
                                     <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>
                                 )
                             }
@@ -53,9 +54,19 @@ const Nav = () => {
                     </li>
                     <li>
                         <div className="link-container">
-                            <Link to="/contact">Contact</Link>
+                            <Link to={WorkUrl}>My projects</Link>
                             {
-                                pathname === '/contact' && (
+                                pathname === WorkUrl && (
+                                    <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>
+                                )
+                            }
+                        </div>
+                    </li>
+                    <li>
+                        <div className="link-container">
+                            <Link to={ContactUrl}>Contact</Link>
+                            {
+                                pathname === ContactUrl && (
                                     <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>
                                 )
                             }
