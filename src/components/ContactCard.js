@@ -1,6 +1,6 @@
 import React from 'react'
 //Animations
-import { fade } from '../animation'
+import { fadeUp } from '../animation'
 import { motion } from 'framer-motion'
 //Slack
 import { sendMessageToSlack } from '../utils'
@@ -12,7 +12,7 @@ const ContactCard = ({ title, image, url }) => {
     }
 
     return (
-        <motion.a onClick={onClickHandler} variants={fade} className="card" href={url} target="_blank" rel="noopener noreferrer" download>
+        <motion.a initial='hidden' animate='show' onClick={onClickHandler} variants={fadeUp} className="card" href={url} target="_blank" rel="noopener noreferrer" download>
             <img src={image} alt="" />
             <h3>{title}</h3>
         </motion.a>
