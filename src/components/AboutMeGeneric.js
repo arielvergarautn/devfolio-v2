@@ -1,4 +1,4 @@
-function AboutMeGeneric({title, subtitle, link, image, paragraphOne, paragraphTwo}) {
+function AboutMeGeneric({title, subtitle, link, image, paragraphOne, paragraphTwo, paragraphThree}) {
 
     const handleClick = () => {
         window.location.href = link;
@@ -21,6 +21,9 @@ function AboutMeGeneric({title, subtitle, link, image, paragraphOne, paragraphTw
                 }
                 {
                     paragraphTwo && <p>{paragraphTwo}</p>
+                }
+                {
+                    paragraphThree && <p>{paragraphThree}</p>
                 }
             </div>
         </div>

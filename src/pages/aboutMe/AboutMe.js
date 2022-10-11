@@ -1,48 +1,31 @@
-//CSS
 import './_aboutMe.scss'
-//Components
 import BannerGeneral from '../../components/BannerGeneral'
-import AboutMeGeneric from '../../components/AboutMe';
-import Github from '../../public/icons/github.png'
+import AboutMeGeneric from '../../components/AboutMeGeneric';
+import { experienceData } from '../../data';
 
 const AboutMe = () => {
     const title = "About me";
     const subTitle = "A little bit of my life and experience in the programming world";
 
-    const nosisTitle = "Nosis"
-    const nosisSubTitle = ""
-    const nosisUrl = "http://www.google.com"
-    const nosisImage = Github
-    const paragraphOne = "lkdajlksdjlkajlskjdlksajdldskajlkdsjlkja"
+    const data = experienceData();
     
     return (
         <>
             <BannerGeneral title={title} subTitle={subTitle} />
             <div className="about-me-information">
-                <AboutMeGeneric 
-                    title={nosisTitle} 
-                    subtitle={nosisSubTitle} 
-                    link={nosisUrl}  
-                    image={nosisImage}
-                    paragraphOne={paragraphOne} />
-                <AboutMeGeneric 
-                    title={nosisTitle} 
-                    subtitle={nosisSubTitle} 
-                    link={nosisUrl}  
-                    image={nosisImage}
-                    paragraphOne={paragraphOne} />
-                <AboutMeGeneric 
-                    title={nosisTitle} 
-                    subtitle={nosisSubTitle} 
-                    link={nosisUrl}  
-                    paragraphOne={paragraphOne} />
-                <AboutMeGeneric 
-                    title={nosisTitle} 
-                    subtitle={nosisSubTitle} 
-                    link={nosisUrl}  
-                    image={nosisImage}
-                    paragraphOne={paragraphOne} />
-
+                {
+                    data.map(experience => (
+                        <AboutMeGeneric 
+                            title={experience.title} 
+                            subtitle={experience.subtitle} 
+                            link={experience.url}  
+                            image={experience.image}
+                            paragraphOne={experience.paragraphOne}
+                            paragraphTwo={experience.paragraphTwo}
+                            paragraphThree={experience.paragraphThree} />
+                    ))
+                }
+                
             </div>
         </>
     )

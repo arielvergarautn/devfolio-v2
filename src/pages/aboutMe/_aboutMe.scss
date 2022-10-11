@@ -4,12 +4,13 @@
     align-items: center;
     // text-align: center;
     z-index: 10;
-    padding: 5rem;
+    // padding: 5rem;
     h3, h5{
         color: #b534ac;
     }
     p{
         color: #6c6c6c;
+        padding: 0;
     }
     img{
         height: 20rem !important;
@@ -22,5 +23,11 @@
     }
     &:nth-child(odd){
         background: var(--secondary-background-color);
+    }
+    .text-container{
+        padding: 5rem;
+    }
+    .image-container{
+        padding: 5rem;
     }
 }

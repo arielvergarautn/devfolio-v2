@@ -109,3 +109,32 @@ export const socialNetworkData = () => {
         }
     ];
 }
+
+export const experienceData = () => {
+    return [
+        {
+            title: "Intercept",
+            url: "https://intercept.cloud/",
+            workInformationUrl: "https://reassure.cloud/",
+            paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facere itaque unde fugit iure suscipit maiores eveniet odit iste, esse repellendus aperiam! Repellendus accusamus itaque delectus molestiae natus pariatur dolor dolorem a ipsum. Et sapiente sunt dolores neque tempora beatae nisi, odit velit nam quidem facere repellat ex magnam tenetur.",
+            paragraphTwo: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae quo eligendi fuga non repellat inventore, iure error corporis eius ipsum.",
+            paragraphThree: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae quo eligendi fuga non repellat inventore, iure error corporis eius ipsum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae quo eligendi fuga non repellat inventore, iure error corporis eius ipsum.",
+            image: Github,
+        },
+        {
+            title: "Danone",
+            url: "https://www.danone.com/",
+            workInformationUrl: null,
+            paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facere itaque unde fugit iure suscipit maiores eveniet odit iste, esse repellendus aperiam! Repellendus accusamus itaque delectus molestiae natus pariatur dolor dolorem a ipsum. Et sapiente sunt dolores neque tempora beatae nisi, odit velit nam quidem facere repellat ex magnam tenetur.",
+            paragraphTwo: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae quo eligendi fuga non repellat inventore, iure error corporis eius ipsum.",
+            image: Gmail,
+        },
+        {
+            title: "Nosis",
+            url: "https://www.nosis.com/",
+            workInformationUrl: "https://www.nosis.com/es/informes-comerciales/compliance",
+            paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facere itaque unde fugit iure suscipit maiores eveniet odit iste, esse repellendus aperiam! Repellendus accusamus itaque delectus molestiae natus pariatur dolor dolorem a ipsum. Et sapiente sunt dolores neque tempora beatae nisi, odit velit nam quidem facere repellat ex magnam tenetur.",
+            image: Linkedin,
+        }
+    ]
+}
