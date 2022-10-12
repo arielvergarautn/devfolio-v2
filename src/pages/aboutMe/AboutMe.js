@@ -18,7 +18,8 @@ const AboutMe = () => {
                         <AboutMeGeneric 
                             title={experience.title} 
                             subtitle={experience.subtitle} 
-                            link={experience.url}  
+                            url={experience.url}  
+                            workInformationUrl={experience.workInformationUrl}
                             image={experience.image}
                             paragraphOne={experience.paragraphOne}
                             paragraphTwo={experience.paragraphTwo}

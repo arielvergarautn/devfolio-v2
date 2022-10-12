@@ -1,30 +1,52 @@
-function AboutMeGeneric({title, subtitle, link, image, paragraphOne, paragraphTwo, paragraphThree}) {
+import { motion } from 'framer-motion'
+import { fade } from '../animation'
 
-    const handleClick = () => {
-        window.location.href = link;
+function AboutMeGeneric({title, subtitle, url, workInformationUrl, image, paragraphOne, paragraphTwo, paragraphThree}) {
+
+    const handleWebsiteButtonClick = () => {
+        window.location.href = url;
+    }
+
+    const handleWebsiteWorkInformationButtonClick = () => {
+        window.location.href = workInformationUrl;
     }
 
     return (
-        <div className='about-me' onClick={handleClick}>
-            <div className='image-container'>
-                {
-                    image && <img src={image} alt='' />
-                }
+        <div className='about-me row'>
+            <div className='content-container d-flex'>
+                <div className='image-container'>
+                    {
+                        image && <img src={image} alt='' />
+                    }
+                </div>
+                <div className='text-container'>
+                    <h3>{title}</h3>
+                    {
+                        subtitle && <h5>{subtitle}</h5>
+                    }
+                    {
+                        paragraphOne && <p>{paragraphOne}</p>
+                    }
+                    {
+                        paragraphTwo && <p>{paragraphTwo}</p>
+                    }
+                    {
+                        paragraphThree && <p>{paragraphThree}</p>
+                    }
+                </div>
             </div>
-            <div className='text-container'>
-                <h3>{title}</h3>
+            <div className="action-container">
                 {
-                    subtitle && <h5>{subtitle}</h5>
+                    workInformationUrl && (
+                        <motion.button className='filled ms-5 float-end' variants={fade} onClick={handleWebsiteWorkInformationButtonClick}>
+                            Project information
+                        </motion.button>
+                    )
                 }
-                {
-                    paragraphOne && <p>{paragraphOne}</p>
-                }
-                {
-                    paragraphTwo && <p>{paragraphTwo}</p>
-                }
-                {
-                    paragraphThree && <p>{paragraphThree}</p>
-                }
+                <motion.button className='filled float-end' variants={fade} onClick={handleWebsiteButtonClick}>
+                    Website
+                </motion.button>
+                
             </div>
         </div>
     )
