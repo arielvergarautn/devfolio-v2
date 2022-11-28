@@ -171,6 +171,52 @@ p{
     background: #8effa0;
 }
 
+.card-side {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    h3, h5{
+        color: #b534ac;
+    }
+    p{
+        color: #6c6c6c;
+        padding: 0;
+    }
+    img{
+        height: 20rem !important;
+        border-radius: 50%;
+        height: fit-content;
+    }
+    &:nth-child(even) {
+        background: var(--background-color);
+    }
+    &:nth-child(odd){
+        background: var(--secondary-background-color);
+    }
+    .text-container{
+        padding: 5rem;
+    }
+    .image-container{
+        padding: 5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .action-container{
+        padding: 0 6rem 3rem 0;
+    }
+
+    &.switch-sides{
+        &:nth-child(even) {
+            .content-container{
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+
+
 @media (max-width: 1600px){
     html{
         font-size: 80%;

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { fade } from '../animation'
 
-function AboutMeGeneric({title, subtitle, url, workInformationUrl, image, paragraphOne, paragraphTwo, paragraphThree}) {
+function AboutMeGeneric({title, subtitle, url, workInformationUrl, image, paragraphOne, paragraphTwo, paragraphThree, switchSides}) {
 
     const handleWebsiteButtonClick = () => {
         window.location.href = url;
@@ -12,13 +12,15 @@ function AboutMeGeneric({title, subtitle, url, workInformationUrl, image, paragr
     }
 
     return (
-        <div className='about-me row'>
+        <div className={`card-side row ${switchSides ? "switch-sides" : ""}`}>
             <div className='content-container d-flex'>
-                <div className='image-container'>
-                    {
-                        image && <img src={image} alt='' />
-                    }
-                </div>
+                
+                {
+                    image && 
+                        <div className='image-container'>
+                            <img src={image} alt='' />
+                        </div>
+                }
                 <div className='text-container'>
                     <h3>{title}</h3>
                     {
