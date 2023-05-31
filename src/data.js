@@ -90,12 +90,6 @@ export const socialNetworkData = () => {
             updated: true
         },
         {
-            name: 'Github',
-            image: Github,
-            url: 'https://github.com/arielvergarautn',
-            updated: true
-        },
-        {
             name: 'WhatsApp',
             image: Wsp,
             url: 'https://api.whatsapp.com/send?phone=31658974168&text=Hi!',

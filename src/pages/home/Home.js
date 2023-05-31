@@ -11,7 +11,6 @@ const Home = () => {
     return (
         <motion.div className='home' variants={pageAnimation} initial='hidden' animate='show'>
             <Banner />
-            <AboutMe />
         </motion.div>
     )
 }

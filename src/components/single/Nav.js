@@ -33,16 +33,6 @@ const Nav = () => {
                     </li>
                     <li>
                         <div className="link-container">
-                            <Link to="/about">About me</Link>
-                            {
-                                pathname === '/about' && (
-                                    <motion.div variants={lineNavAnim} initial='hidden' animate='show' className="line"></motion.div>
-                                )
-                            }
-                        </div>
-                    </li>
-                    <li>
-                        <div className="link-container">
                             <Link to="/work">My projects</Link>
                             {
                                 pathname === '/work' && (

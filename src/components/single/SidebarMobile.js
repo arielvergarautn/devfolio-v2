@@ -22,11 +22,6 @@ function SidebarMobile({sidebarActive, setSidebarActive}) {
           </Link>
         </li>
         <li>
-          <Link onClick={handleClick} to="/about">
-            <i class="bi bi-person-lines-fill"></i>About me
-          </Link>
-        </li>
-        <li>
           <Link onClick={handleClick} to="/work">
             <i class="bi bi-code-slash"></i>My projects
             </Link>
