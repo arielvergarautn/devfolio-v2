@@ -20,7 +20,6 @@ import plumberS1 from './public/img/plumber-s1.png'
 import plumberS2 from './public/img/plumber-s2.png'
 
 //Icons Contact
-import Github from './public/icons/github.png'
 import Gmail from './public/icons/gmail.png'
 import Linkedin from './public/icons/linkedin.png'
 import Wsp from './public/icons/whatsapp.png'

@@ -4,7 +4,6 @@ import Contact from "./pages/contact/Contact";
 import Work from "./pages/work/Work";
 import NotFound from "./pages/notFound/NotFound";
 import Nav from "./components/single/Nav";
-import AboutMe from "./pages/aboutMe/AboutMe";
 
 //Styles
 import './public/styles/app.scss';
